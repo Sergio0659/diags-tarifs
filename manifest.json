@@ -1,0 +1,16 @@
+{
+    "name": "Calculateur de Tarifs",
+    "short_name": "Tarifs",
+    "icons": [
+        {
+            "src": "/images/relocation_11138049.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f4f4f9",
+    "theme_color": "#a3d9f5",
+    "orientation": "portrait"
+}

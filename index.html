@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/relocation_11138049.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Tarifs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page d'accueil -->
+        <div id="home">
+            <h1>Choisissez votre type de logement</h1>
+            <button class="btn" onclick="showMaison()">Maison</button>
+            <button class="btn" onclick="showAppartement()">Appartement</button>
+        </div>
+
+        <!-- Page pour Maison -->
+        <div id="maisonPage" class="hidden">
+            <h1>Options pour Maison</h1>
+            <button class="btn" onclick="selectSurface('HomT1')">1 pièce ou 30m²</button>
+            <button class="btn" onclick="selectSurface('HomT2')">2 pièces ou 55m²</button>
+            <button class="btn" onclick="selectSurface('HomT3')">3 pièces ou 75m²</button>
+            <button class="btn" onclick="selectSurface('HomT4')">4 pièces ou 95m²</button>
+            <button class="btn" onclick="selectSurface('HomT5')">5 pièces ou 120m²</button>
+            <button class="btn" onclick="selectSurface('HomT6')">6 pièces ou 150m²</button>
+            <button class="btn" onclick="selectSurface('HomT7')">7 pièces ou 180m²</button> 
+        </div>
+
+        <!-- Page pour Appartement -->
+        <div id="appartementPage" class="hidden">
+            <h1>Options pour Appartement</h1>
+            <button class="btn" onclick="selectSurface('AppT1')">1 pièce ou 30m²</button>
+            <button class="btn" onclick="selectSurface('AppT2')">2 pièces ou 55m²</button>
+            <button class="btn" onclick="selectSurface('AppT3')">3 pièces ou 75m²</button>
+            <button class="btn" onclick="selectSurface('AppT4')">4 pièces ou 95m²</button>
+            <button class="btn" onclick="selectSurface('AppT5')">5 pièces ou 120m²</button>
+            <button class="btn" onclick="selectSurface('AppT6')">6 pièces ou 150m²</button>
+            <button class="btn" onclick="selectSurface('AppT7')">7 pièces ou 180m²</button>   
+        </div>
+
+        <!-- Page pour sélection des produits -->
+        <div id="produitsPage" class="hidden">
+            <h1>Choisissez un ou plusieurs produits</h1>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('Amiante')">Amiante</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('Termites')">Termites</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('Métrage')">Métrage</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('DPE')">DPE</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('ERP')">ERP</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('Électricité')">Électricité</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('Gaz')">Gaz</button>
+            </div>
+            <div class="product-item">
+                <button class="btn" onclick="selectProduct('Plomb')">Plomb</button>
+            </div>
+            <button class="btn calculate-btn" onclick="calculateTotal()">Calculer le total</button>
+        </div>
+
+        <!-- Page de confirmation avec le total des prix -->
+        <div id="confirmationPage" class="hidden">
+            <h1>Total à payer : <span id="totalPrice">0</span> €</h1>
+            <button class="btn back-btn" onclick="goBackHome()">Retour à l'accueil</button>
+        </div>
+    </div>
+
+    <script>
+        let selectedSurface = '';
+        let selectedProducts = [];
+        let prices = {}; // Ceci contiendra les prix après le chargement    
+        let discounts = {};
+
+        // Charger les remises depuis remises.json
+        fetch('remises.json')
+            .then(response => response.json())
+            .then(data => {
+                discounts = data.discounts;
+                console.log("Remises chargées : ", discounts); // Vérifier que les remises sont bien chargées
+    })
+        // Charger les prix à partir de produits.json
+        fetch('produits.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(item => {
+        
+        // Créer une clé pour chaque type de surface et produit, ex: "T1 Amiante"
+            const key = `${item.Type} ${item.Produits}`;
+            prices[key] = item.Prix;
+            });
+            console.log("Prix chargés : ", prices);  // Vérifie que les prix sont chargés correctement
+            });
+    
+        function showMaison() {
+            document.getElementById("home").classList.add("hidden");
+            document.getElementById("maisonPage").classList.remove("hidden");
+        }
+    
+        function showAppartement() {
+            document.getElementById("home").classList.add("hidden");
+            document.getElementById("appartementPage").classList.remove("hidden");
+        }
+    
+        function goBack() {
+            document.getElementById("maisonPage").classList.add("hidden");
+            document.getElementById("appartementPage").classList.add("hidden");
+            document.getElementById("produitsPage").classList.add("hidden");
+            document.getElementById("home").classList.remove("hidden");
+        }
+    
+        function selectSurface(surface) {
+            selectedSurface = surface;
+            document.getElementById("maisonPage").classList.add("hidden");
+            document.getElementById("appartementPage").classList.add("hidden");
+            document.getElementById("produitsPage").classList.remove("hidden");
+        }
+    
+        function selectProduct(product) {
+            const button = document.querySelector(`[onclick="selectProduct('${product}')"]`);
+            const index = selectedProducts.indexOf(product);
+    
+            if (index === -1) {
+                selectedProducts.push(product);
+                button.style.backgroundColor = "#f68a7c"; // Couleur pastel lors de la sélection
+            } else {
+                selectedProducts.splice(index, 1);
+                button.style.backgroundColor = "#a3d9f5"; // Retour à la couleur d'origine
+            }
+        }
+    
+        function calculateTotal() {
+            let total = 0;
+    
+            selectedProducts.forEach((product) => {
+                const key = `${selectedSurface} ${product}`;
+                const productPrice = prices[key];
+    
+                if (productPrice) {
+                    total += productPrice;
+                } else {
+                    console.log(`Prix non trouvé pour ${key}`);
+                }
+            });
+    
+        // Calculer la remise basée sur le nombre de produits sélectionnés
+            const productCount = selectedProducts.length;
+            let discountPercentage = discounts[productCount] || 0; // Si pas de remise, 0%
+    
+            const discountAmount = total * (discountPercentage / 100);
+            const finalTotal = total - discountAmount;
+
+            document.getElementById("totalPrice").innerText = finalTotal.toFixed(2);
+            document.getElementById("produitsPage").classList.add("hidden");
+            document.getElementById("confirmationPage").classList.remove("hidden");
+}
+    
+        function goBackHome() {
+            selectedProducts = [];
+            selectedSurface = '';
+            document.querySelectorAll('.product-item button').forEach(button => {
+                button.style.backgroundColor = "#a3d9f5";
+            });
+    
+            document.getElementById("confirmationPage").classList.add("hidden");
+            document.getElementById("home").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>

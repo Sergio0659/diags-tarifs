@@ -1,0 +1,522 @@
+[
+    {
+        "Type": "AppT1",
+        "Produits": "Amiante",
+        "Prix": 80
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "Amiante",
+        "Prix": 95
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "Amiante",
+        "Prix": 105
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "Amiante",
+        "Prix": 115
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "Amiante",
+        "Prix": 125
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "Amiante",
+        "Prix": 160
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "Amiante",
+        "Prix": 220
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "Amiante",
+        "Prix": 98
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "Amiante",
+        "Prix": 108
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "Amiante",
+        "Prix": 127
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "Amiante",
+        "Prix": 138
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "Amiante",
+        "Prix": 176
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "Amiante",
+        "Prix": 242
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "Termites",
+        "Prix": 80
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "Termites",
+        "Prix": 95
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "Termites",
+        "Prix": 105
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "Termites",
+        "Prix": 115
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "Termites",
+        "Prix": 125
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "Termites",
+        "Prix": 160
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "Termites",
+        "Prix": 220
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "Termites",
+        "Prix": 98
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "Termites",
+        "Prix": 108
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "Termites",
+        "Prix": 127
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "Termites",
+        "Prix": 138
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "Termites",
+        "Prix": 176
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "Termites",
+        "Prix": 242
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "M\u00e9trage",
+        "Prix": 70
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "M\u00e9trage",
+        "Prix": 85
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "M\u00e9trage",
+        "Prix": 100
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "M\u00e9trage",
+        "Prix": 120
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "M\u00e9trage",
+        "Prix": 135
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "M\u00e9trage",
+        "Prix": 145
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "M\u00e9trage",
+        "Prix": 150
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "M\u00e9trage",
+        "Prix": 88
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "M\u00e9trage",
+        "Prix": 103
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "M\u00e9trage",
+        "Prix": 132
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "M\u00e9trage",
+        "Prix": 149
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "M\u00e9trage",
+        "Prix": 160
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "M\u00e9trage",
+        "Prix": 165
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "DPE",
+        "Prix": 95
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "DPE",
+        "Prix": 110
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "DPE",
+        "Prix": 120
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "DPE",
+        "Prix": 130
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "DPE",
+        "Prix": 140
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "DPE",
+        "Prix": 180
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "DPE",
+        "Prix": 250
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "DPE",
+        "Prix": 113
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "DPE",
+        "Prix": 124
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "DPE",
+        "Prix": 143
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "DPE",
+        "Prix": 154
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "DPE",
+        "Prix": 198
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "DPE",
+        "Prix": 275
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "ERP",
+        "Prix": 35
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "Gaz",
+        "Prix": 90
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "Gaz",
+        "Prix": 93
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "Gaz",
+        "Prix": 93
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "Gaz",
+        "Prix": 99
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "Gaz",
+        "Prix": 99
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "Gaz",
+        "Prix": 99
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "Gaz",
+        "Prix": 99
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 65
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 85
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 100
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 110
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 135
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 160
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 180
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 88
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 103
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 121
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 149
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 176
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "\u00c9lectricit\u00e9",
+        "Prix": 198
+    },
+    {
+        "Type": "AppT1",
+        "Produits": "Plomb",
+        "Prix": 100
+    },
+    {
+        "Type": "AppT2",
+        "Produits": "Plomb",
+        "Prix": 125
+    },
+    {
+        "Type": "AppT3",
+        "Produits": "Plomb",
+        "Prix": 135
+    },
+    {
+        "Type": "AppT4",
+        "Produits": "Plomb",
+        "Prix": 145
+    },
+    {
+        "Type": "AppT5",
+        "Produits": "Plomb",
+        "Prix": 155
+    },
+    {
+        "Type": "AppT6",
+        "Produits": "Plomb",
+        "Prix": 195
+    },
+    {
+        "Type": "AppT7",
+        "Produits": "Plomb",
+        "Prix": 255
+    },
+    {
+        "Type": "HomT2",
+        "Produits": "Plomb",
+        "Prix": 129
+    },
+    {
+        "Type": "HomT3",
+        "Produits": "Plomb",
+        "Prix": 139
+    },
+    {
+        "Type": "HomT4",
+        "Produits": "Plomb",
+        "Prix": 160
+    },
+    {
+        "Type": "HomT5",
+        "Produits": "Plomb",
+        "Prix": 171
+    },
+    {
+        "Type": "HomT6",
+        "Produits": "Plomb",
+        "Prix": 215
+    },
+    {
+        "Type": "HomT7",
+        "Produits": "Plomb",
+        "Prix": 281
+    }
+]
